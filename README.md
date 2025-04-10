@@ -1,6 +1,6 @@
 # DevFlow - Productivity Extension 🚀
 
-![Extension Screenshot](assets/screenshot.png)
+![output image](https://github.com/mohamednousad/Blink-AI/blob/9c84f5e34113cec62657e6ee2134a5afb02bb4cf/src/assets/output.png)
 
 ## Features ✨
 - **Quick Links** - One-click access to dev tools (GitHub, VS Code, etc.)
