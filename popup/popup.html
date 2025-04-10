@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Flow</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <header class="popup-header">
+        <i
+          class="fas fa-rocket popup-logo"
+          style="color: var(--primary); font-size: 1.5rem"
+        ></i>
+        <div>
+          <h1 class="popup-title">Dev Flow</h1>
+          <p class="popup-subtitle">Developed by Nousad</p>
+        </div>
+      </header>
+
+      <main class="popup-content">
+        <section class="popup-section animate-fade">
+          <h2 class="section-title"><i class="fas fa-bolt"></i> Quick Links</h2>
+          <div class="quick-links-grid">
+            <button class="quick-link-btn" id="googleMeet">
+              <div class="quick-link-icon" style="background-color: #dbeafe">
+                <i class="fas fa-video" style="color: var(--primary)"></i>
+              </div>
+              <span>Google Meet</span>
+            </button>
+            <button class="quick-link-btn" id="github">
+              <div class="quick-link-icon" style="background-color: #f0fdf4">
+                <i class="fab fa-github" style="color: var(--dark)"></i>
+              </div>
+              <span>GitHub</span>
+            </button>
+            <button class="quick-link-btn" id="googleKeep">
+              <div class="quick-link-icon" style="background-color: #fef9c3">
+                <i class="fas fa-sticky-note" style="color: var(--warning)"></i>
+              </div>
+              <span>Google Keep</span>
+            </button>
+            <button class="quick-link-btn" id="vsCode">
+              <div class="quick-link-icon" style="background-color: #e0f2fe">
+                <i class="fas fa-code" style="color: var(--primary)"></i>
+              </div>
+              <span>VS Code</span>
+            </button>
+            <button class="quick-link-btn" id="chatGPT">
+              <div class="quick-link-icon" style="background-color: #ffedd5">
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              <span>Chat GPT</span>
+            </button>
+
+            <button class="quick-link-btn" id="googleCalendar">
+              <div class="quick-link-icon" style="background-color: #ffedd5">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <span>Calendar</span>
+            </button>
+          </div>
+        </section>
+        <section id="featureSection" class="popup-section animate-fade">
+          <h2 class="section-title"><i class="fas fa-link"></i> Save Pages</h2>
+          <div class="input-group">
+            <input
+              type="text"
+              id="pageLink"
+              class="link-input"
+              placeholder="Enter page URL"
+            />
+            <div class="button-group">
+              <button class="btn btn-primary" id="savePageLink">
+                <i class="fas fa-save"></i> Save
+              </button>
+              <button class="btn btn-outline" id="clearLinks">
+                <i class="fas fa-trash-alt"></i> Clear All
+              </button>
+            </div>
+          </div>
+          <div id="savedLinksSection">
+            <h3><i class="fas fa-bookmark"></i> Saved Links</h3>
+            <ul id="savedLinksList"></ul>
+          </div>
+        </section>
+
+        <section class="popup-section animate-fade">
+          <h2 class="section-title">
+            <i class="fas fa-sliders-h"></i> Focus Tools
+          </h2>
+
+          <div class="focus-controls">
+            <div>
+              <span class="status-indicator status-inactive"></span>
+              <span>Ad Blocker</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="addBlocker" />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+        </section>
+
+        <section id="quickNotes" class="popup-section animate-fade">
+          <h2 class="section-title"><i class="fas fa-pen"></i> Quick Notes</h2>
+          <textarea
+            class="notes-textarea"
+            placeholder="Type your notes here..."
+          ></textarea>
+          <div class="button-group">
+            <button class="btn btn-primary" id="saveNote">
+              <i class="fas fa-save"></i> Save Note
+            </button>
+            <button class="btn btn-outline" id="clearNote">
+              <i class="fas fa-trash-alt"></i> Clear
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
