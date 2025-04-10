@@ -1,6 +1,6 @@
 # DevFlow - Productivity Extension 🚀
 
-![output image](https://github.com/mohamednousad/DevFlow/blob/4a4f9c744a558c42f1beee35abe429c59d29b5c2/output.png)
+![output image](https://github.com/mohamednousad/DevFlow/blob/ca7d40ce16f7cd0534f57ca93090426530435922/output.png)
 
 ## Features ✨
 - **Quick Links** - One-click access to dev tools (GitHub, VS Code, etc.)
